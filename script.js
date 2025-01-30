@@ -1,6 +1,5 @@
-// Add any JavaScript functionality here if needed (like smooth scrolling)
-// Example of smooth scroll effect for links
-document.querySelectorAll('a').forEach(anchor => {
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({

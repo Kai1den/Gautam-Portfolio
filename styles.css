@@ -29,37 +29,44 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
     color: white;
-    font-weight: bold;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 section {
-    padding: 80px 20px;
+    margin-top: 80px;
+    padding: 40px;
 }
 
-.project {
+h2 {
+    color: #004080;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
     margin-bottom: 20px;
-}
-
-.social-icon {
-    width: 40px;
-    height: 40px;
-    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
-.social-icon:hover {
-    transform: scale(1.1);
+.project-card:hover {
+    transform: scale(1.05);
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #004080;
-    color: white;
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
 }
