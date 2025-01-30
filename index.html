@@ -1,166 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gautam Bairwa's Portfolio</title>
-  <!-- Link to Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- Link to external CSS for styles -->
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-    }
-
-    header {
-      background: #333;
-      color: #fff;
-      padding: 20px 10px;
-      text-align: center;
-    }
-
-    .navbar {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      margin: 0;
-    }
-
-    .navbar li {
-      margin: 0 20px;
-    }
-
-    .navbar a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 600;
-      text-transform: uppercase;
-      font-size: 18px;
-      transition: color 0.3s;
-    }
-
-    .navbar a:hover {
-      color: #ffd700;
-    }
-
-    #about {
-      padding: 50px 0;
-      text-align: center;
-    }
-
-    #about h2 {
-      font-size: 2.5em;
-      font-weight: 600;
-      color: #333;
-    }
-
-    #about p {
-      font-size: 1.2em;
-      color: #555;
-      max-width: 700px;
-      margin: 20px auto;
-      line-height: 1.6;
-    }
-
-    .cta-button {
-      background-color: #ffd700;
-      padding: 10px 20px;
-      border: none;
-      font-size: 1.2em;
-      cursor: pointer;
-      border-radius: 5px;
-      margin-top: 20px;
-      transition: background-color 0.3s;
-    }
-
-    .cta-button:hover {
-      background-color: #ff9900;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 30px;
-      padding: 40px;
-    }
-
-    .project-card {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .project-card:hover {
-      transform: translateY(-10px);
-    }
-
-    .project-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
-
-    .project-card h3 {
-      margin-top: 10px;
-      color: #333;
-    }
-
-    .project-card p {
-      color: #777;
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gautam's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="container">
+            <h1>Hi, I'm Gautam!</h1>
+            <p>Welcome to my professional portfolio.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="cta">See My Work</a>
+                <a href="#contact" class="cta">Contact Me</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Header Section -->
-  <header>
-    <h1>Gautam Bairwa</h1>
-    <ul class="navbar">
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </header>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Skills & Experience</h3>
+                    <p>I am passionate about data analysis, project coordination, and web development. With over 3 years of experience, I have honed skills in tools like Tableau, Power BI, and Excel. I aim to leverage my skills in data to contribute to impactful projects.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://github.com/Kai1den/Gautam-Portfolio/blob/main/me.jpg?raw=true" alt="Gautam">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- About Me Section -->
-  <section id="about">
-    <img src="https://github.com/Kai1den/Gautam-Portfolio/blob/main/me.jpg" alt="Gautam Bairwa" width="200" height="200" style="border-radius: 50%;"/>
-    <h2>Hi, I'm Gautam Bairwa</h2>
-    <p>I am a Data Analyst and Web Designer with a passion for problem-solving and creative solutions. I specialize in data visualization, web design, and providing insights from data to drive business decisions.</p>
-    <button class="cta-button">Let's Work Together</button>
-  </section>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>A brief description of the project goes here. It can be about data analysis, web design, etc.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Another project description. Highlight key achievements and outcomes of the project.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>A short overview of the project’s scope and the technologies used.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="projects">
-      <!-- Project Cards (example) -->
-      <div class="project-card">
-        <img src="project1.jpg" alt="Project 1">
-        <h3>Project Title</h3>
-        <p>Short description of the project goes here.</p>
-      </div>
-      <div class="project-card">
-        <img src="project2.jpg" alt="Project 2">
-        <h3>Project Title</h3>
-        <p>Short description of the project goes here.</p>
-      </div>
-      <!-- More project cards can be added here -->
-    </div>
-  </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to work together, feel free to reach out through any of the following links:</p>
+            <div class="contact-links">
+                <a href="mailto:gautambairwa6891@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/gautambairwa" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Gautam Bairwa. All Rights Reserved.</p>
-  </footer>
-
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gautam. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
