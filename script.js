@@ -1,26 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Smooth Scrolling Effect
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute("href")).scrollIntoView({
-                behavior: "smooth"
-            });
-        });
-    });
+    const nav = document.querySelector("nav ul");
+    const toggleBtn = document.createElement("div");
+    toggleBtn.innerHTML = "&#9776;";
+    toggleBtn.classList.add("toggle-menu");
 
-    // Intersection Observer for Scroll Animations
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("fade-in");
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.3 });
+    document.querySelector("header").prepend(toggleBtn);
 
-    document.querySelectorAll("section").forEach(section => {
-        section.classList.add("hidden");
-        observer.observe(section);
+    toggleBtn.addEventListener("click", function () {
+        nav.classList.toggle("show");
     });
 });
