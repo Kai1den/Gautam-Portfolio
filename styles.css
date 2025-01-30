@@ -1,29 +1,21 @@
-/* General Styles */
 body {
-    background-color: black;
-    color: black;
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
 }
 
-/* Header */
-header {
+nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background: #000000;
     padding: 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+    background-color: #333;
 }
 
-.logo {
-    font-size: 24px;
+nav .logo {
+    font-size: 1.5rem;
     font-weight: bold;
-    color: yellow;
 }
 
 nav ul {
@@ -32,57 +24,54 @@ nav ul {
     gap: 20px;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+nav ul li {
+    display: inline;
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    margin-top: 100px;
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+.hero-section {
     padding: 100px 20px;
 }
 
-.hero h1 span {
-    color: yellow;
+.hero-section h1 {
+    font-size: 2.5rem;
 }
 
-.hero p {
-    font-size: 18px;
-    color: lightgray;
+.hero-section .highlight {
+    color: #f4a261;
 }
 
-/* Buttons */
-.btn {
-    display: inline-block;
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-primary, .cta-secondary {
     padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
     border-radius: 5px;
+    text-decoration: none;
     margin: 10px;
 }
 
-.btn-primary {
-    background: yellow;
+.cta-primary {
+    background-color: #f4a261;
     color: black;
 }
 
-.btn-secondary {
-    border: 2px solid yellow;
-    color: yellow;
+.cta-secondary {
+    border: 2px solid white;
+    color: white;
 }
 
-/* Sections */
-section {
-    padding: 80px 20px;
-    text-align: center;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #0a0a0a;
+.cta-secondary:hover {
+    background-color: white;
+    color: black;
 }
