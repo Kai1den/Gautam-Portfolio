@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     background-color: black;
-    color: white;
+    color: black;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0a0a0a;
+    background: #000000;
     padding: 20px;
     position: fixed;
     width: 100%;
