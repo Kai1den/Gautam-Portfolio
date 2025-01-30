@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
+/* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f5f5f5;
@@ -28,45 +27,111 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
 }
 
 section {
-    margin-top: 80px;
-    padding: 40px;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-h2 {
-    color: #004080;
+/* Home Section */
+#home {
+    background-color: #007bff;
+    color: white;
+    padding: 80px 20px;
+}
+
+#home h1 {
+    font-size: 3em;
+}
+
+#home p {
+    font-size: 1.5em;
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Project Section */
+#projects {
+    background-color: #f0f0f0;
 }
 
 .project-card {
-    background-color: white;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
 }
 
-.project-card:hover {
-    transform: scale(1.05);
+.project-button {
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333333;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-.social-links a {
-    margin: 0 10px;
+.project-button:hover {
+    background-color: #e6b800;
 }
 
-.social-links img {
-    transition: transform 0.3s ease;
+/* Contact Section */
+#contact {
+    background-color: #ffffff;
 }
 
-.social-links img:hover {
-    transform: scale(1.1);
+.contact-info a {
+    display: block;
+    color: #004080;
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #ffcc00;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
