@@ -55,6 +55,7 @@ header {
     border-radius: 50%;
     border: 3px solid white;
     margin-bottom: 15px;
+    background: url('https://github.com/Kai1den/Gautam-Portfolio/blob/main/me.jpg') center/cover;
 }
 
 .cta {
