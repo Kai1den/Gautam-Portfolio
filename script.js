@@ -1,16 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let sections = document.querySelectorAll("section");
-    let options = {
-        threshold: 0.2
-    };
-    let observer = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-            }
+// Add any JavaScript functionality here if needed (like smooth scrolling)
+// Example of smooth scroll effect for links
+document.querySelectorAll('a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
         });
-    }, options);
-    sections.forEach(section => {
-        observer.observe(section);
     });
 });
