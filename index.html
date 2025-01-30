@@ -5,44 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gautam's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Hi, I'm Gautam!</h1>
-        <p>I specialize in data analysis, reporting, and system integration, helping businesses make data-driven decisions.</p>
-        <a href="#projects">See My Work</a> | <a href="#contact">Contact Me</a>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+    
+    <section id="home">
+        <div class="container">
+            <h1>Hi, I'm Gautam!</h1>
+            <p>Welcome to my professional portfolio.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="cta">See My Work</a>
+                <a href="#contact" class="cta">Contact Me</a>
+            </div>
+        </div>
+    </section>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>With over 3 years of experience in data analysis, inventory management, and system integration, I excel in leveraging tools like Power BI, Tableau, and Zoho Analytics to optimize business processes.</p>
-        <ul>
-            <li><strong>Key Skills:</strong> Data Analysis, System Integration, CRM Management, Strategic Insights</li>
-            <li><strong>Tools:</strong> Power BI, Tableau, Zoho, SQL, Python, Excel, Airtable, SAP</li>
-        </ul>
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Skills & Experience</h3>
+                    <p>I am passionate about data analysis, project coordination, and web development. With over 3 years of experience, I have honed skills in tools like Tableau, Power BI, and Excel. I aim to leverage my skills in data to contribute to impactful projects.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://github.com/Kai1den/Gautam-Portfolio/blob/main/me.jpg?raw=true" alt="Gautam">
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Sales Dashboard (Power BI)</h3>
-            <p>Developed an interactive Power BI dashboard for sales performance tracking, increasing insights by 40%.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project">
-            <img src="project2.jpg" alt="Project 2">
-            <h3>Zoho Inventory Optimization</h3>
-            <p>Streamlined inventory workflows with Zoho integration, improving accuracy by 30%.</p>
-            <a href="#">View Project</a>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>A brief description of the project goes here. It can be about data analysis, web design, etc.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Another project description. Highlight key achievements and outcomes of the project.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>A short overview of the project’s scope and the technologies used.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:Gautambairwa6891@gmail.com">Gautambairwa6891@gmail.com</a></p>
-        <p>Phone: +91 8595873224</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/gautambairwa" target="_blank">Gautam's LinkedIn</a></p>
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to work together, feel free to reach out through any of the following links:</p>
+            <div class="contact-links">
+                <a href="mailto:gautambairwa6891@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/gautambairwa" target="_blank">LinkedIn</a>
+            </div>
+        </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gautam. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
