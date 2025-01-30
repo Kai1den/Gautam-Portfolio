@@ -5,67 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gautam's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Gautam</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+            <ul>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="hero">
-        <div class="hero-content">
-            <img src="https://github.com/Kai1den/Gautam-Portfolio/blob/main/me.jpg" alt="Gautam's Photo" class="profile-pic">
-            <h1>Hi, I'm Gautam</h1>
-            <p>Business Developer & Aspiring Freelancer</p>
-            <a href="#projects" class="cta">View My Work</a>
+    
+    <section id="home">
+        <div class="container">
+            <h1>Hi, I'm Gautam!</h1>
+            <p>Welcome to my professional portfolio.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="cta">See My Work</a>
+                <a href="#contact" class="cta">Contact Me</a>
+            </div>
         </div>
     </section>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a Business Developer with a strong interest in web design and poster creation. Passionate about creating impactful digital experiences.</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Skills & Experience</h3>
+                    <p>I am passionate about data analysis, project coordination, and web development. With over 3 years of experience, I have honed skills in tools like Tableau, Power BI, and Excel. I aim to leverage my skills in data to contribute to impactful projects.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://github.com/Kai1den/Gautam-Portfolio/blob/main/me.jpg?raw=true" alt="Gautam">
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <h3>Portfolio Website</h3>
-                <p>A sleek, modern portfolio showcasing my skills and work.</p>
-                <a href="#" class="project-link">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Canva Poster Designs</h3>
-                <p>Various poster designs created using Canva.</p>
-                <a href="#" class="project-link">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Web Design Mockups</h3>
-                <p>Conceptual web design layouts to showcase UI/UX skills.</p>
-                <a href="#" class="project-link">View Project</a>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>A brief description of the project goes here. It can be about data analysis, web design, etc.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Another project description. Highlight key achievements and outcomes of the project.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>A short overview of the project’s scope and the technologies used.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Let's connect and work on something amazing.</p>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/gautambairwa" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Kai1den" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to work together, feel free to reach out through any of the following links:</p>
+            <div class="contact-links">
+                <a href="mailto:gautambairwa6891@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/gautambairwa" target="_blank">LinkedIn</a>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Gautam. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Gautam. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
