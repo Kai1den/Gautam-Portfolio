@@ -1,70 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gautam's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gautam Bairwa's Portfolio</title>
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Link to external CSS for styles -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 10px;
+      text-align: center;
+    }
+
+    .navbar {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+    }
+
+    .navbar li {
+      margin: 0 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #ffd700;
+    }
+
+    #about {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    #about h2 {
+      font-size: 2.5em;
+      font-weight: 600;
+      color: #333;
+    }
+
+    #about p {
+      font-size: 1.2em;
+      color: #555;
+      max-width: 700px;
+      margin: 20px auto;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      background-color: #ffd700;
+      padding: 10px 20px;
+      border: none;
+      font-size: 1.2em;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #ff9900;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .project-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .project-card h3 {
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .project-card p {
+      color: #777;
+    }
+
+  </style>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <div class="intro">
-            <h1>Hello, I'm Gautam</h1>
-            <p>A passionate Data Analyst and Web Designer</p>
-            <img src="https://github.com/Kai1den/Gautam-Portfolio/blob/main/me.jpg?raw=true" alt="Gautam's photo" class="profile-img">
-        </div>
-    </section>
+  <!-- Header Section -->
+  <header>
+    <h1>Gautam Bairwa</h1>
+    <ul class="navbar">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a Data Analyst with experience in various tools like Tableau, Power BI, and Excel. I also specialize in
-            web design and creative work such as poster designs and visual elements. I am constantly learning and improving
-            my skills to stay up-to-date with new technologies.
-        </p>
-    </section>
+  <!-- About Me Section -->
+  <section id="about">
+    <img src="https://github.com/Kai1den/Gautam-Portfolio/blob/main/me.jpg" alt="Gautam Bairwa" width="200" height="200" style="border-radius: 50%;"/>
+    <h2>Hi, I'm Gautam Bairwa</h2>
+    <p>I am a Data Analyst and Web Designer with a passion for problem-solving and creative solutions. I specialize in data visualization, web design, and providing insights from data to drive business decisions.</p>
+    <button class="cta-button">Let's Work Together</button>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <img src="https://via.placeholder.com/300" alt="Project 1">
-            <h3>Project 1</h3>
-            <p>Description of Project 1</p>
-            <a href="https://www.linkedin.com/in/gautambairwa" target="_blank" class="cta-button">See More</a>
-        </div>
-        <div class="project">
-            <img src="https://via.placeholder.com/300" alt="Project 2">
-            <h3>Project 2</h3>
-            <p>Description of Project 2</p>
-            <a href="https://www.linkedin.com/in/gautambairwa" target="_blank" class="cta-button">See More</a>
-        </div>
-        <!-- Add more projects here -->
-    </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <!-- Project Cards (example) -->
+      <div class="project-card">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Project Title</h3>
+        <p>Short description of the project goes here.</p>
+      </div>
+      <div class="project-card">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project Title</h3>
+        <p>Short description of the project goes here.</p>
+      </div>
+      <!-- More project cards can be added here -->
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p><strong>Email:</strong> <a href="mailto:gautambairwa6891@gmail.com">gautambairwa6891@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gautambairwa" target="_blank">Gautam Bairwa</a></p>
-        </div>
-    </section>
+  <footer>
+    <p>© 2025 Gautam Bairwa. All Rights Reserved.</p>
+  </footer>
 
-    <footer>
-        <p>&copy; 2025 Gautam Bairwa | All Rights Reserved</p>
-    </footer>
 </body>
-
 </html>
